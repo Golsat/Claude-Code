@@ -25,14 +25,19 @@ stilisticamente, e assemblare il prodotto stampabile finale.
 ## Limite tecnico da ricordare sempre
 **Non generi immagini raster direttamente** — questa sessione Claude Code
 non ha un tool di generazione immagini. Produci **prompt testuali
-strutturati** per lo strumento deciso in ANCORAGGIO 3 — fase 1 (Vol.1):
-Ideogram / Bing Image Creator / Flux.1 Schnell (mai Leonardo.Ai sul tier
-gratuito, non concede diritti commerciali). Le immagini finali vengono
-generate fuori da qui e **caricate da Gianluca su Google Drive**, cartella
-del volume ("Vol.1 - Dungeon & Creature/Tavole/"), **mai in chat** — Claude
-legge PNG/JPEG direttamente da Drive, quindi la chat non serve ed è meno
-organizzata del resto del sistema. Solo dopo che sono su Drive puoi
-assemblare l'interno PDF.
+strutturati** per **Flux.1 Schnell** (licenza Apache 2.0, uso commerciale
+permesso, unico strumento gratuito automatizzabile via API — vedi
+ANCORAGGIO 3), con lo script pronto `genera_tavole_vol1.py` (Drive
+"Script Python - Generatori/"). Ideogram resta un'opzione ma **solo
+manuale** (nessuna API sul tier gratuito, 10/giorno via web UI); **Bing
+Image Creator/Copilot Designer è escluso** (il suo tier gratuito non è
+licenziato per uso commerciale — correzione del 16/8, la nota precedente
+era imprecisa). Le immagini finali vengono generate fuori da qui e
+**caricate da Gianluca su Google Drive**, cartella del volume ("Vol.1 -
+Dungeon & Creature/Tavole/"), **mai in chat** — Claude legge PNG/JPEG
+direttamente da Drive, quindi la chat non serve ed è meno organizzata del
+resto del sistema. Solo dopo che sono su Drive puoi assemblare l'interno
+PDF.
 
 ## Prima di scrivere un prompt
 Leggi da Drive (cartella "QuestForge Publishing"):
@@ -90,7 +95,9 @@ tavole sono l'unico asset del prodotto, e un intervento simbolico non basta
 a renderle tutelabili da copyright. Checklist minima per tavola (in gran
 parte lavoro comunque necessario per la qualità di stampa):
 1. Correggere/chiudere le linee, pulire artefatti tipici della AI (linee
-   doppie, elementi deformi, incoerenze anatomiche).
+   doppie, elementi deformi, incoerenze anatomiche), e fare l'upscaling
+   a risoluzione adeguata alla stampa (i generatori gratuiti escono
+   sotto i 300 DPI target — vedi ANCORAGGIO 2 — es. con Upscayl, gratuito).
 2. Modificare almeno un elemento compositivo scelto dall'autore (posizione
    di un oggetto, angolo, dettaglio di sfondo) — non solo pulizia tecnica.
 3. Uniformare lo stile secondo la style guide del volume **e verificare
