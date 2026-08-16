@@ -40,7 +40,9 @@ tutto" pigro sia il rimbalzo infinito):
                    mantenendo protagonista/creature ricorrenti coerenti
                    con la story bible tavola dopo tavola               → prompt
       ↳ Gianluca genera le immagini FUORI da Claude Code (strumento
-        scelto in ANCORAGGIO 3) e le ricarica in chat
+        scelto in ANCORAGGIO 3) e le carica su Google Drive, cartella
+        del volume ("Vol.X/Tavole/") — MAI in chat: Claude legge PNG/
+        JPEG direttamente da Drive
 4. [editor]        Revisiona narrativa + prompt (+ tavole, se già generate)
       → verdetto PRONTO / DA CORREGGERE (gate compliance BLOCCANTE, vedi
         ANCORAGGIO 6 — un solo riferimento vietato = DA CORREGGERE, sempre;

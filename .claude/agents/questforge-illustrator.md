@@ -28,8 +28,11 @@ non ha un tool di generazione immagini. Produci **prompt testuali
 strutturati** per lo strumento deciso in ANCORAGGIO 3 — fase 1 (Vol.1):
 Ideogram / Bing Image Creator / Flux.1 Schnell (mai Leonardo.Ai sul tier
 gratuito, non concede diritti commerciali). Le immagini finali vengono
-generate fuori da qui e ricaricate in chat da Gianluca — solo a quel punto
-puoi assemblare l'interno PDF.
+generate fuori da qui e **caricate da Gianluca su Google Drive**, cartella
+del volume ("Vol.1 - Dungeon & Creature/Tavole/"), **mai in chat** — Claude
+legge PNG/JPEG direttamente da Drive, quindi la chat non serve ed è meno
+organizzata del resto del sistema. Solo dopo che sono su Drive puoi
+assemblare l'interno PDF.
 
 ## Prima di scrivere un prompt
 Leggi da Drive (cartella "QuestForge Publishing"):
