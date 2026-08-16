@@ -24,15 +24,19 @@ Include un **loop di revisione con tetto massimo**, per evitare sia il "va
 bene tutto" pigro sia il rimbalzo infinito tra writer ed editor:
 
 ```
-1. [researcher] Ricerca mercato, se non già fatta di recente     → report dati
-2. [writer]     Scrive la bozza del capitolo/volume               → bozza
-3. [editor]     Revisiona → verdetto PRONTO / DA CORREGGERE
+1. [researcher]    Ricerca mercato, se non già fatta di recente   → report dati
+2. [writer]        Scrive la bozza del capitolo/volume            → bozza
+3. [editor]        Revisiona struttura/voce/KDP → PRONTO / DA CORREGGERE
       ↳ DA CORREGGERE → torna al passo 2 con le note dell'editor
       ↳ dopo 2 cicli senza arrivare a PRONTO → mi fermo e chiedo a te,
         non continuo a girare in loop da solo
-4. [marketing]  Solo dopo verdetto PRONTO: scheda KDP, keyword, promo KDP
-5. [social]     Post di lancio e copy ads (bozze, in parallelo al punto 4)
-6. Riepilogo finale a te, con evidenziati i checkpoint ANCORAGGIO 3
+4. [psychologist]  Solo dopo PRONTO: verifica impatto psicologico → OK / DA RIVEDERE
+      ↳ DA RIVEDERE → torna al passo 2 con le note (poi di nuovo editor+psychologist)
+      ↳ tema che va oltre "il tono va aggiustato" → si ferma, apre un file in
+        "🔍 CONTROLLO GIANLUCA", non prosegue senza il tuo ok
+5. [marketing]     Solo dopo PRONTO + OK: scheda KDP, keyword, promo KDP
+6. [social]        Post di lancio e copy ads (bozze, in parallelo al punto 5)
+7. Riepilogo finale a te, con evidenziati i checkpoint ANCORAGGIO 3
    (prezzo, lancio, DRM, budget ads) da confermare
 ```
 
@@ -46,13 +50,14 @@ campagna su un volume già live).
 |---|---|---|---|
 | **smartlife-writer** | `smartlife-writer.md` | Scrive/continua capitoli e volumi secondo gli ANCORAGGIO di Drive; gestisce build EPUB/PDF/copertine | Non valuta la qualità del proprio lavoro in modo indipendente — quello è l'editor |
 | **smartlife-editor** | `smartlife-editor.md` | Revisiona le bozze contro il manuale editoriale e la voce di collana; verdetto onesto pronto/da correggere | Non scrive contenuto nuovo, non riscrive silenziosamente le bozze |
+| **smartlife-psychologist** | `smartlife-psychologist.md` | Verifica impatto psicologico/emotivo (dopo l'editor): colpevolizzazione, riposo "produttivizzato", minimizzazione, AI come sostituto di supporto reale | Non dà consigli clinici, non decide se un capitolo va escluso — quello è di Gianluca |
 | **smartlife-researcher** | `smartlife-researcher.md` | Ricerca competitor, keyword KDP, posizionamento di mercato (WebSearch/WebFetch) | Non decide prezzo/lancio — porta solo dati |
 | **smartlife-marketing** | `smartlife-marketing.md` | Prepara schede KDP, descrizione, keyword, calendario promo KDP | Non pubblica nulla — KDP non è raggiungibile da qui, output sempre da incollare a mano |
 | **smartlife-social** | `smartlife-social.md` | Post organici, copy ads (Amazon Ads/Meta Ads), calendario editoriale social | Non pubblica sui social né spende budget — nessuna piattaforma è raggiungibile da qui |
 
 ## Regola condivisa: checkpoint su Gianluca
 
-Tutti e cinque gli agenti si fermano e chiedono conferma prima di decidere
+Tutti e sei gli agenti si fermano e chiedono conferma prima di decidere
 su ciò che l'**ANCORAGGIO 3 - Decisioni e Strategia** (su Drive) classifica
 come strategico: prezzo, KDP Select/DRM, data di lancio, budget pubblicitario,
 via libera a un nuovo volume, contenuti sensibili. Propongono opzioni con
