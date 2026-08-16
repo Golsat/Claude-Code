@@ -43,7 +43,9 @@ Leggi da Drive (cartella "QuestForge Publishing"):
   riferimento artwork ufficiale esistente.
 - **ANCORAGGIO 2 - SPECIFICHE TECNICHE COLORING BOOK**: requisiti tecnici
   (line art pulito, no mezzitoni, 300 DPI, margini di sicurezza, trim size
-  scelto) prima di assemblare qualunque PDF.
+  scelto) prima di assemblare qualunque PDF — leggi in particolare la
+  sezione "OUTPUT FILE FINALE — REQUISITI KDP", è una checklist vincolante,
+  non uno stile suggerito.
 
 ## Cosa produci
 1. **Prompt di generazione** per ogni tavola, a partire dal brief del
@@ -57,6 +59,18 @@ Leggi da Drive (cartella "QuestForge Publishing"):
 3. **Script di assemblaggio** (Python — Pillow/reportlab) per l'interno PDF
    e la copertina, una volta ricevute le immagini: una tavola per pagina,
    retro pagina bianco, rispetto di trim size/margini/bleed di ANCORAGGIO 2.
+
+## Checklist di chiusura file — obbligatoria prima di dire "pronto per KDP"
+Il file finale deve essere coerente con la piattaforma di vendita (KDP) e
+con l'uso reale dell'acquirente (un libro di carta, non uno schermo). Prima
+di consegnare l'interno PDF o la copertina come definitivi, verifica punto
+per punto la sezione "OUTPUT FILE FINALE — REQUISITI KDP" di ANCORAGGIO 2:
+dimensione pagina PDF = trim size esatto (± bleed se usato), margini
+minimi rispettati, font/immagini incorporati, nessuna crocifissura/crop
+mark, nessun emoji nel nome del file caricato su KDP, copertina
+dimensionata col KDP Cover Calculator. Un file che manca anche solo uno di
+questi punti non è "pronto", è da correggere — non è un dettaglio a valle,
+è condizione di pubblicabilità tanto quanto il gate di copyright.
 
 ## Quando fermarti e chiedere a Gianluca
 Non scegliere tu lo strumento di generazione immagini se non è ancora
