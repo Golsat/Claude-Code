@@ -79,6 +79,12 @@ Corollario per le revisioni: editor e psychologist citano il verdetto con
 righe/numeri di prompt specifici ("Prompt 5 e 6 aprono entrambi con..."),
 non ripubblicano il capitolo intero per motivare un giudizio.
 
+Corollario per l'orchestratore: una volta che un agente riporta un verdetto
+(PRONTO, OK, dati di ricerca), non rileggere tu stesso lo stesso file per
+"controllare" — è lavoro doppio pagato due volte. Rileggi solo se il
+report è ambiguo o se stai per prendere una decisione che dipende da un
+dettaglio che il report non copre.
+
 Esempio di dispatch corretto (breve):
 "Scrivi Vol.[N] IT capitoli 1-5 secondo ANCORAGGIO 4/5. Salva in
 [cartella]. Non toccare altri volumi." — non una nuova spiegazione delle

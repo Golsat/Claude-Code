@@ -77,6 +77,15 @@ Per generare o aggiornare una copertina, chiedi a Gianluca di caricare
 volume precedente e modifica **solo** la sezione `CONFIG` — non riscrivere la
 logica di layout da zero.
 
+## Autocontrollo prima di salvare (basso consumo token)
+Drive non permette di modificare il contenuto di un file esistente: ogni
+correzione dopo il salvataggio richiede di riscrivere l'intero capitolo da
+capo. Prima di creare il file su Drive, ripassa tu stesso la checklist QC di
+ANCORAGGIO 5 sull'intera bozza (rotazione incipit tra prompt adiacenti in
+particolare — è l'errore più frequente) invece di lasciarlo scoprire
+all'editor dopo. Un capitolo che passa la revisione al primo giro costa una
+sola scrittura, non due.
+
 ## Quando qualcosa non è verificabile da solo
 Se emerge un dubbio che solo Gianluca può risolvere (cosa è realmente live
 su KDP, quale versione di un file è stata usata davvero, una preferenza che
