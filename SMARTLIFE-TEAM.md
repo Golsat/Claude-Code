@@ -63,6 +63,27 @@ come strategico: prezzo, KDP Select/DRM, data di lancio, budget pubblicitario,
 via libera a un nuovo volume, contenuti sensibili. Propongono opzioni con
 pro/contro, non scelgono al posto tuo.
 
+## Disciplina di dispatch (basso consumo token)
+
+Quando l'orchestratore (io, in qualunque sessione) invoca un agente, il
+prompt di dispatch deve restare **corto**:
+- Non ripetere regole che l'agente leggerà da solo (checklist QC, regola
+  geografica, struttura a 5 blocchi: già in ANCORAGGIO 5, l'agente lo legge
+  per istruzione propria). Rimandare con "leggi ANCORAGGIO 5", non incollarlo.
+- Passare **ID Drive diretti** alle fonti da leggere, mai il testo intero
+  incollato nel prompt — l'agente ha gli strumenti Drive per leggerselo.
+- Dare solo: cosa fare, quali file leggere (per ID), dove salvare l'output,
+  cosa NON fare. Il resto lo trova nei suoi stessi ANCORAGGIO.
+
+Corollario per le revisioni: editor e psychologist citano il verdetto con
+righe/numeri di prompt specifici ("Prompt 5 e 6 aprono entrambi con..."),
+non ripubblicano il capitolo intero per motivare un giudizio.
+
+Esempio di dispatch corretto (breve):
+"Scrivi Vol.[N] IT capitoli 1-5 secondo ANCORAGGIO 4/5. Salva in
+[cartella]. Non toccare altri volumi." — non una nuova spiegazione delle
+regole ogni volta.
+
 ## Fonte di verità
 
 Gli agenti non contengono lo stato del progetto — lo leggono ogni volta da
