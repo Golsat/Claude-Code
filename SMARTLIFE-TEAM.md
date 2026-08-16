@@ -6,22 +6,39 @@ su Amazon KDP, 10 volumi previsti, edizioni IT/EN). I file vivono in
 `.claude/agents/` e vengono attivati automaticamente da Claude Code in base
 alla richiesta — non serve invocarli per nome, basta chiedere in linguaggio
 naturale ("scrivi il prossimo capitolo", "rivedi la bozza", "cerca i
-competitor", "preparami la scheda KDP").
+competitor", "preparami la scheda KDP", "preparami dei post per il lancio").
 
 ## Come funziona il team
 
-Non è uno sciame autonomo: la sessione Claude Code fa da **orchestratore**,
-richiama l'agente giusto per il compito, gli passa il contesto/output
-dell'agente precedente e raccoglie i risultati. Il flusso tipico per un
-nuovo capitolo/volume è:
+Non è uno sciame autonomo: i subagenti non si chiamano tra loro. La sessione
+Claude Code fa da **orchestratore** — richiama l'agente giusto per il
+compito, gli passa il contesto/output dell'agente precedente e raccoglie i
+risultati. Questo tiene il sistema prevedibile: tu mantieni il controllo dei
+checkpoint, io eseguo la sequenza.
+
+## Il flusso standard — trigger "CLAUD€"
+
+Scrivere **"CLAUD€"** avvia la produzione di un nuovo volume: io eseguo
+l'intera sequenza sotto senza che tu debba invocare ogni agente a mano.
+Include un **loop di revisione con tetto massimo**, per evitare sia il "va
+bene tutto" pigro sia il rimbalzo infinito tra writer ed editor:
 
 ```
-researcher → writer → editor → marketing
-(dati mercato) (bozza) (revisione onesta) (schede KDP)
+1. [researcher] Ricerca mercato, se non già fatta di recente     → report dati
+2. [writer]     Scrive la bozza del capitolo/volume               → bozza
+3. [editor]     Revisiona → verdetto PRONTO / DA CORREGGERE
+      ↳ DA CORREGGERE → torna al passo 2 con le note dell'editor
+      ↳ dopo 2 cicli senza arrivare a PRONTO → mi fermo e chiedo a te,
+        non continuo a girare in loop da solo
+4. [marketing]  Solo dopo verdetto PRONTO: scheda KDP, keyword, promo KDP
+5. [social]     Post di lancio e copy ads (bozze, in parallelo al punto 4)
+6. Riepilogo finale a te, con evidenziati i checkpoint ANCORAGGIO 3
+   (prezzo, lancio, DRM, budget ads) da confermare
 ```
 
-Ogni passaggio è indipendente: puoi anche chiamare un solo agente per un
-compito puntuale (es. solo l'editor su un capitolo già scritto).
+Per un compito puntuale non serve il flusso intero: puoi chiamare un solo
+agente (es. solo l'editor su un capitolo già scritto, solo il social per una
+campagna su un volume già live).
 
 ## Gli agenti
 
@@ -30,24 +47,24 @@ compito puntuale (es. solo l'editor su un capitolo già scritto).
 | **smartlife-writer** | `smartlife-writer.md` | Scrive/continua capitoli e volumi secondo gli ANCORAGGIO di Drive; gestisce build EPUB/PDF/copertine | Non valuta la qualità del proprio lavoro in modo indipendente — quello è l'editor |
 | **smartlife-editor** | `smartlife-editor.md` | Revisiona le bozze contro il manuale editoriale e la voce di collana; verdetto onesto pronto/da correggere | Non scrive contenuto nuovo, non riscrive silenziosamente le bozze |
 | **smartlife-researcher** | `smartlife-researcher.md` | Ricerca competitor, keyword KDP, posizionamento di mercato (WebSearch/WebFetch) | Non decide prezzo/lancio — porta solo dati |
-| **smartlife-marketing** | `smartlife-marketing.md` | Prepara schede KDP, descrizione, keyword, calendario promo | Non pubblica nulla — KDP non è raggiungibile da qui, output sempre da incollare a mano |
+| **smartlife-marketing** | `smartlife-marketing.md` | Prepara schede KDP, descrizione, keyword, calendario promo KDP | Non pubblica nulla — KDP non è raggiungibile da qui, output sempre da incollare a mano |
+| **smartlife-social** | `smartlife-social.md` | Post organici, copy ads (Amazon Ads/Meta Ads), calendario editoriale social | Non pubblica sui social né spende budget — nessuna piattaforma è raggiungibile da qui |
 
 ## Regola condivisa: checkpoint su Gianluca
 
-Tutti e quattro gli agenti si fermano e chiedono conferma prima di decidere
+Tutti e cinque gli agenti si fermano e chiedono conferma prima di decidere
 su ciò che l'**ANCORAGGIO 3 - Decisioni e Strategia** (su Drive) classifica
-come strategico: prezzo, KDP Select/DRM, data di lancio, via libera a un
-nuovo volume, contenuti sensibili. Propongono opzioni con pro/contro, non
-scelgono al posto tuo.
+come strategico: prezzo, KDP Select/DRM, data di lancio, budget pubblicitario,
+via libera a un nuovo volume, contenuti sensibili. Propongono opzioni con
+pro/contro, non scelgono al posto tuo.
 
 ## Fonte di verità
 
 Gli agenti non contengono lo stato del progetto — lo leggono ogni volta da
-Google Drive, cartella **"SmartLife Publishing"**, dai file ANCORAGGIO 1-5.
+Google Drive, cartella **"SmartLife Publishing"**, dai file ANCORAGGIO 1-7.
 Questo repo contiene solo i *ruoli* (chi fa cosa), non lo stato del progetto.
 
-> **Nota (16/08/2026):** la struttura degli ANCORAGGIO su Drive è ancora
-> quella storica (file versionati `_v8`, `_v9`, ecc., con stato duplicato tra
-> ANCORAGGIO 1 e il "PROMPT per continuare"). È in programma uno snellimento
-> (nomi fissi, split stato/mappa-file/storico, meno token per sessione) —
-> non ancora eseguito su Drive alla data di questo file.
+> **Nota:** gli ANCORAGGIO su Drive sono stati ristrutturati per ridurre il
+> consumo di token per sessione — nomi fissi (una sola copia viva per nome,
+> le sostituite vanno subito in OLD_ARCHIVIO), ANCORAGGIO 1 accorciato al solo
+> stato corrente, mappa file/ID e storico tecnico separati in ANCORAGGIO 6 e 7.
