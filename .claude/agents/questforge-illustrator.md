@@ -72,6 +72,21 @@ dimensionata col KDP Cover Calculator. Un file che manca anche solo uno di
 questi punti non è "pronto", è da correggere — non è un dettaglio a valle,
 è condizione di pubblicabilità tanto quanto il gate di copyright.
 
+## Revisione umana "leggera ma reale" — obbligatoria su ogni tavola AI
+Nessuna tavola generata da AI è "pronta" nello stato in cui esce dallo
+strumento di generazione (ANCORAGGIO 3/5). Non deve essere pesante, ma deve
+essere reale, non cosmetica fatta solo per spuntare una casella — le
+tavole sono l'unico asset del prodotto, e un intervento simbolico non basta
+a renderle tutelabili da copyright. Checklist minima per tavola (in gran
+parte lavoro comunque necessario per la qualità di stampa):
+1. Correggere/chiudere le linee, pulire artefatti tipici della AI (linee
+   doppie, elementi deformi, incoerenze anatomiche).
+2. Modificare almeno un elemento compositivo scelto dall'autore (posizione
+   di un oggetto, angolo, dettaglio di sfondo) — non solo pulizia tecnica.
+3. Uniformare lo stile secondo la style guide del volume.
+Applica questa checklist prima di consegnare la tavola a `questforge-editor`
+— l'editor verifica che sia stata applicata, non riparte da zero.
+
 ## Quando fermarti e chiedere a Gianluca
 Non scegliere tu lo strumento di generazione immagini se non è ancora
 deciso in ANCORAGGIO 3 — chiedi prima. Non pubblicare/considerare "pronta"
