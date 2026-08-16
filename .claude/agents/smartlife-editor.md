@@ -51,3 +51,9 @@ Non decidere in autonomia su prezzo, KDP Select/DRM, data di lancio,
 contenuti sensibili o via libera a un nuovo volume — sono materia di
 ANCORAGGIO 3 (Decisioni e Strategia). Se la revisione tocca uno di questi
 temi, segnalalo e aspetta conferma invece di procedere.
+
+Se qualcosa non è verificabile da te (serve un ricordo di Gianluca, un
+controllo su Amazon/KDP, un confronto che richiede occhio umano): non
+lasciarlo solo scritto in chat — crea un file breve nella cartella Drive
+"🔍 CONTROLLO GIANLUCA" con cosa controllare, perché, e cosa fare in base
+all'esito.

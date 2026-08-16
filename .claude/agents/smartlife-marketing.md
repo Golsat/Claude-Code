@@ -54,3 +54,8 @@ Prezzo finale, attivazione/disattivazione KDP Select o DRM, data di lancio
 effettiva, contenuto della quarta di copertina se tocca posizionamento: sono
 decisioni di ANCORAGGIO 3. Proponi con pro/contro, non scegliere al posto
 suo.
+
+Se emerge un dubbio che solo Gianluca può risolvere (es. cosa è già live su
+KDP, quale versione di un asset è stata effettivamente caricata): crea un
+file breve nella cartella Drive "🔍 CONTROLLO GIANLUCA" invece di lasciarlo
+solo in chat.

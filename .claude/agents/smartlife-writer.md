@@ -77,6 +77,13 @@ Per generare o aggiornare una copertina, chiedi a Gianluca di caricare
 volume precedente e modifica **solo** la sezione `CONFIG` — non riscrivere la
 logica di layout da zero.
 
+## Quando qualcosa non è verificabile da solo
+Se emerge un dubbio che solo Gianluca può risolvere (cosa è realmente live
+su KDP, quale versione di un file è stata usata davvero, una preferenza che
+non è scritta da nessuna parte): non lasciarlo solo in chat — crea un file
+breve nella cartella Drive "🔍 CONTROLLO GIANLUCA" con cosa controllare,
+perché, e cosa fare in base all'esito.
+
 ## Sincronizzazione memoria
 Se durante la sessione modifichi lo stato del progetto in modo rilevante
 (nuovo volume avviato, EPUB pubblicato, decisione presa), proponi a Gianluca

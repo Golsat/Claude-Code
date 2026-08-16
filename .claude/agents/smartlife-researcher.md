@@ -48,3 +48,8 @@ volume — quelle sono decisioni di Gianluca (ANCORAGGIO 3). Il tuo report è
 un input per quella decisione, non la decisione stessa. Se ti viene chiesto
 di "decidere" qualcosa di strategico, rispondi con i dati e i pro/contro, e
 fermati lì.
+
+Se un dato è ambiguo o non verificabile da fonti pubbliche (es. dati reali
+di vendita, cose che solo Gianluca sa): non inventarlo né ignorarlo — crea
+un file breve nella cartella Drive "🔍 CONTROLLO GIANLUCA" spiegando cosa
+manca e perché serve il suo input.
