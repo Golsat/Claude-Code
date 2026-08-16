@@ -22,7 +22,7 @@ Prima di dare un verdetto, recupera da Drive (cartella "SmartLife Publishing")
 i riferimenti pertinenti — non a memoria:
 - **ANCORAGGIO 4 - MANUALE EDITORIALE COLLANA**: linee guida di collana,
   posizionamento, punti ciechi noti per il volume in questione.
-- **ANCORAGGIO 5 - SYSTEM PROMPT PRODUZIONE VOLUMI** (versione più recente):
+- **ANCORAGGIO 5 - SYSTEM PROMPT PRODUZIONE VOLUMI** (nome fisso, unica copia viva):
   template struttura (Pain → Matrix Prompt → Variables → Real Output → Pro
   Move), tono richiesto, note critiche specifiche del volume.
 
