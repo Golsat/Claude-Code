@@ -33,13 +33,19 @@ tutto" pigro sia il rimbalzo infinito):
 
 ```
 1. [researcher]    Ricerca mercato, se non già fatta di recente         → report dati
-2. [worldbuilder]  Filo narrativo + brief di scena per ogni tavola      → brief
-3. [illustrator]   Trasforma i brief in prompt immagine + style guide   → prompt
+2. [worldbuilder]  STEP 0: sinossi + story bible del volume (OGNI volume
+                   ha un proprio storyline completo, non scene sparse con
+                   un tema in comune), poi brief di scena per ogni tavola → brief
+3. [illustrator]   Trasforma i brief in prompt immagine + style guide,
+                   mantenendo protagonista/creature ricorrenti coerenti
+                   con la story bible tavola dopo tavola               → prompt
       ↳ Gianluca genera le immagini FUORI da Claude Code (strumento
         scelto in ANCORAGGIO 3) e le ricarica in chat
 4. [editor]        Revisiona narrativa + prompt (+ tavole, se già generate)
       → verdetto PRONTO / DA CORREGGERE (gate compliance BLOCCANTE, vedi
-        ANCORAGGIO 6 — un solo riferimento vietato = DA CORREGGERE, sempre)
+        ANCORAGGIO 6 — un solo riferimento vietato = DA CORREGGERE, sempre;
+        stesso peso per il "test storybook": le didascalie in fila devono
+        leggersi come un racconto, non come scene scollegate)
       ↳ DA CORREGGERE → torna al passo 2 o 3 con le note dell'editor
       ↳ dopo 2 cicli senza arrivare a PRONTO → mi fermo e chiedo a te,
         non continuo a girare in loop da solo
@@ -68,6 +74,10 @@ campagna su un volume già live).
 
 ## Differenze principali rispetto al team SmartLife
 
+- **Ogni volume è uno storybook con un proprio storyline e un protagonista
+  fisso** (decisione strutturale, ANCORAGGIO 4), non una raccolta di
+  contenuti indipendenti con un tema in comune — a differenza dei 50
+  prompt indipendenti (interscambiabili tra loro) di ogni volume SmartLife.
 - **Prodotto fisico (paperback POD)**, non ebook: economics diverse
   (royalty 60% meno costo di stampa, non 70% fisso) — vedi ANCORAGGIO 2/3.
 - **Contenuto visivo, non testuale**: c'è un agente in più
@@ -77,10 +87,11 @@ campagna su un volume già live).
   esiste un ANCORAGGIO 6 dedicato e un gate di compliance bloccante
   nell'editor — in SmartLife il vincolo di contenuto era solo "non citare la
   vita reale di Gianluca", qui è un vero rischio di violazione di marchio.
-- **Nulla è ancora deciso**: a differenza di SmartLife (che aveva già scelte
-  fissate — prezzo, KDP Select, ecc. — quando è stato creato questo tipo di
-  sistema), qui ANCORAGGIO 3 è quasi interamente aperto. Gli agenti lo
-  sanno e non inventano decisioni al posto di Gianluca.
+- **Decisioni chiave del Vol.1 ormai chiuse** (nome brand, formato, prezzo
+  indicativo, strumento immagini) — vedi ANCORAGGIO 3. Restano aperte solo
+  poche voci a basso impatto immediato (piano serie oltre il Vol.1, KDP
+  Select). Gli agenti trattano le voci chiuse come date, non le rimettono
+  in discussione ad ogni sessione.
 
 ## Regola condivisa: checkpoint su Gianluca
 

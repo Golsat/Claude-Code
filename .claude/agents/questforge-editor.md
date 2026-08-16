@@ -33,18 +33,31 @@ ammorbidirlo.
 
 ## Gate #2 — QUALITÀ
 Poi verifica su questi assi, con esempi concreti (non giudizi vaghi):
-1. **Coerenza narrativa**: il filo tra le tavole regge? Le didascalie sono
-   ripetitive o ognuna aggiunge qualcosa?
-2. **Coerenza visiva**: i prompt immagine rispettano la style guide del
-   volume (ANCORAGGIO 5)? Stesso livello di dettaglio, stesso spessore
-   linea dichiarato?
-3. **Stampabilità** (se già arrivato allo stadio tavole/PDF): line art
+1. **Test storybook (bloccante quanto gli altri assi)**: leggi le
+   didascalie di tutte le tavole in fila, dall'inizio alla fine — si
+   leggono come un racconto con inizio/sviluppo/climax/risoluzione, o come
+   una lista di scene scollegate con un tema in comune? Verifica anche che
+   esista una sinossi + story bible (ANCORAGGIO 5, STEP 0) a monte dei
+   brief: se i brief sono stati scritti senza, il volume non è "scene
+   sparse mascherate da storia" — è da correggere, non da salvare in
+   revisione.
+2. **Coerenza visiva del protagonista/creature ricorrenti**: il
+   protagonista (e ogni comprimario/creatura ricorrente) mantiene
+   ESATTAMENTE lo stesso design/descrizione della story bible in ogni
+   tavola in cui appare? Un personaggio "diverso" da una tavola all'altra
+   rompe l'effetto storybook — segnalarlo come problema di sostanza, non
+   di dettaglio.
+3. **Coerenza visiva generale**: i prompt immagine rispettano la style
+   guide del volume (ANCORAGGIO 5)? Stesso livello di dettaglio, stesso
+   spessore linea dichiarato?
+4. **Stampabilità** (se già arrivato allo stadio tavole/PDF): line art
    pulito senza mezzitoni, 300 DPI, margini di sicurezza rispettati
-   (ANCORAGGIO 2).
-4. **Vendibilità KDP**: nella logica di un "Look Inside" — le prime tavole
+   (ANCORAGGIO 2), e checklist di revisione umana "leggera ma reale"
+   applicata su ogni tavola (ANCORAGGIO 3/5) — non solo dichiarata, verificabile.
+5. **Vendibilità KDP**: nella logica di un "Look Inside" — le prime tavole
    convincono? C'è varietà di difficoltà/composizione o rischiano di
    sembrare tutte uguali?
-5. **Originalità**: le scene sono specifiche del mondo QuestForge o
+6. **Originalità**: le scene sono specifiche del mondo QuestForge o
    genericamente intercambiabili con qualunque coloring book fantasy (vedi
    punti ciechi in ANCORAGGIO 4)?
 

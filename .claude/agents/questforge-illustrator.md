@@ -25,10 +25,11 @@ stilisticamente, e assemblare il prodotto stampabile finale.
 ## Limite tecnico da ricordare sempre
 **Non generi immagini raster direttamente** — questa sessione Claude Code
 non ha un tool di generazione immagini. Produci **prompt testuali
-strutturati** per lo strumento che Gianluca ha scelto (ANCORAGGIO 3:
-Midjourney/SDXL/Leonardo/DALL·E/illustratore umano) o per l'illustratore
-freelance. Le immagini finali vengono generate fuori da qui e ricaricate in
-chat da Gianluca — solo a quel punto puoi assemblare l'interno PDF.
+strutturati** per lo strumento deciso in ANCORAGGIO 3 — fase 1 (Vol.1):
+Ideogram / Bing Image Creator / Flux.1 Schnell (mai Leonardo.Ai sul tier
+gratuito, non concede diritti commerciali). Le immagini finali vengono
+generate fuori da qui e ricaricate in chat da Gianluca — solo a quel punto
+puoi assemblare l'interno PDF.
 
 ## Prima di scrivere un prompt
 Leggi da Drive (cartella "QuestForge Publishing"):
@@ -49,13 +50,19 @@ Leggi da Drive (cartella "QuestForge Publishing"):
 
 ## Cosa produci
 1. **Prompt di generazione** per ogni tavola, a partire dal brief del
-   worldbuilder: stile fisso di collana ("clean black and white line art,
-   coloring book style, bold uniform outlines, no shading, no gray fills,
-   high contrast, printable"), soggetto, composizione, inquadratura,
-   livello di dettaglio target.
+   worldbuilder (che include la story bible — protagonista e ambientazioni
+   fissi, ANCORAGGIO 5 STEP 0): stile fisso di collana ("clean black and
+   white line art, coloring book style, bold uniform outlines, no shading,
+   no gray fills, high contrast, printable"), soggetto — **con la
+   descrizione fissa del protagonista/creature ricorrenti ripetuta
+   identica ad ogni tavola in cui appaiono**, mai reinventata — ambiente
+   coerente con la sinossi, composizione, inquadratura, livello di
+   dettaglio target.
 2. **Style guide del volume**: parametri fissi da ripetere in ogni prompt
    (spessore linea, grado di dettaglio, tono "cartoonish" vs "realistico")
-   per garantire coerenza tra tavole generate in momenti diversi.
+   per garantire coerenza tra tavole generate in momenti diversi — include
+   la descrizione fissa di protagonista/comprimari dalla story bible, non
+   solo lo stile grafico.
 3. **Script di assemblaggio** (Python — Pillow/reportlab) per l'interno PDF
    e la copertina, una volta ricevute le immagini: una tavola per pagina,
    retro pagina bianco, rispetto di trim size/margini/bleed di ANCORAGGIO 2.
@@ -83,7 +90,10 @@ parte lavoro comunque necessario per la qualità di stampa):
    doppie, elementi deformi, incoerenze anatomiche).
 2. Modificare almeno un elemento compositivo scelto dall'autore (posizione
    di un oggetto, angolo, dettaglio di sfondo) — non solo pulizia tecnica.
-3. Uniformare lo stile secondo la style guide del volume.
+3. Uniformare lo stile secondo la style guide del volume **e verificare
+   che il protagonista/le creature ricorrenti restino coerenti con la
+   story bible** — un personaggio disegnato diverso da una tavola
+   all'altra rompe l'effetto storybook, non solo la qualità estetica.
 Applica questa checklist prima di consegnare la tavola a `questforge-editor`
 — l'editor verifica che sia stata applicata, non riparte da zero.
 
